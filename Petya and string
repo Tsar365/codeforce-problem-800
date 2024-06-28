@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    string s1,s2,a,b;
+    cin>>s1>>s2;
+    for(int i=0;i<s1.size();i++)
+    {
+        a=toupper(s1[i]);
+        b=toupper(s2[i]);
+        if(a==b)
+            continue;
+        else if(a<b)
+          {
+            cout<<"-1";
+            break;
+          }
+        else
+        {
+         cout<<"1";
+            break;
+        }
+    }
+    if(a==b)
+        cout<<"0";
+    return 0;
+}
