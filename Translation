@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    string a,r;
+    cin>>a>>r;
+    reverse(a.begin(),a.end());
+    if(a==r)
+        cout<<"YES";
+    else
+        cout<<"NO";
+
+    return 0;
+}
